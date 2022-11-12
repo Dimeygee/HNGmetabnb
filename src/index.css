@@ -209,3 +209,15 @@ code {
   width:214.14px;
   height:37.56px;
 }
+.nts_heading{
+  color:#000000;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 48px;
+  text-align:center;
+
+}
+
+#NFTS{
+  padding:39px 0 53px 0;
+}
