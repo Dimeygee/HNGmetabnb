@@ -180,3 +180,32 @@ code {
   background: var(--btn-color);
   border-radius: 0px 8px 8px 0px;
 }
+
+.ntfTypes{
+  background: var(--btn-color);
+  display: flex;
+  align-items: center;
+  padding: 10px 100px;
+  justify-content: space-evenly;
+  margin:67px 0 58px 0;
+}
+
+.ntfTypes > div img{
+  display:block;
+  width:100%;
+}
+
+.mbtoken{
+  width:222px;
+  height:50px;
+}
+
+.opensea{
+  width:198.32px;
+  height:40.79px;
+}
+
+.metamask{
+  width:214.14px;
+  height:37.56px;
+}
