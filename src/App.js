@@ -5,6 +5,9 @@ import PlaceToStay from "./pages/placetostay";
 
 
 function App() {
+
+ 
+
   return (
     <div className="App">
       <BrowserRouter>

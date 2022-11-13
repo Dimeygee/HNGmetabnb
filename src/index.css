@@ -10,9 +10,20 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background: #F5F5F5;
 }
 
+@font-face{
+  font-family:"red rose";
+  font-display: swap;
+  src:url('/public/fonts/RedRose-Regular.ttf');
+}
+
+
+@font-face{
+  font-family:"sora";
+  font-display: swap;
+  src:url('/public/fonts/Sora-Regular.ttf');
+}
 
 :root{
   --linkblack: #434343;
@@ -21,7 +32,7 @@ body {
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family:'red rose', sora, source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
 
@@ -48,6 +59,7 @@ code {
   text-decoration: none;
   font-weight: 400;
   font-size: 20px;
+  font-family: "red rose";
 } 
 
 .container{
@@ -81,6 +93,7 @@ code {
   cursor: pointer;
   font-weight: 400;
   font-size: 16px;
+  font-family: "red rose";
 }
 
 .color_select{
@@ -99,6 +112,7 @@ code {
   font-size: 56px;
   line-height: 140%;
   width:646px;
+  font-family: "red rose";
 }
 
 .header_content article p{
@@ -106,6 +120,7 @@ code {
   font-weight: 400;
   font-size: 24px;
   line-height: 35px;
+  font-family: "red rose";
   margin:48px 0;
   width: 636px;
 }
@@ -118,9 +133,100 @@ code {
 
 }
 
+.modal{
+  position: fixed;
+  background-color:rgba(64, 64, 64, 0.3);
+  top:0;
+  bottom:0;
+  right:0;
+  left:0;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modalcontent{
+  background-color: white;
+  max-width: 600px;
+  width: 90%;
+  border-radius: 16px;
+}
+
+.modal_header{
+  padding:24px 32px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #CFD8DC;
+}
+
+.modal_header h4{
+  font-weight: 700;
+  font-size: 24px;
+  font-family: "red rose";
+}
+
+.modal_body{
+  padding:32px;
+} 
+
+.modal_body p{
+  font-weight: 400;
+  font-size: 16px;
+  color: #333333;
+  font-family: "red rose";
+  margin-bottom: 16px;
+}
+
+.wallet{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border: 1px solid #CFD8DC;
+  border-radius: 12px;
+  padding:12px 20px;
+  background-color: #F8F9FA;
+}
+
+.wallet div{
+  display:flex;
+  align-items: center;
+  gap:16px;
+  font-family: sora;
+}
+
+.wallet div img{
+  width:44px;
+  height:44px;
+}
+
+.wallet span{
+  font-weight: 600;
+  font-size: 18px;
+}
+
+.wallet_container{
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.close{
+  cursor: pointer;
+}
+
+.wallet img{
+  width:8px;
+}
+
+.modal_header img{
+  width:24px;
+  height: 24px;
+}
 
 .header_content{
   padding:calc(162.46px - 125px) 0;
+  
 }
 
 .header_img_content{
@@ -144,12 +250,12 @@ code {
 
 .header_img_wrapper{
   width: 100%;
-  height: 176px;
 }
 
 .header_img_wrapper img{
   display: block;
   width:100%;
+  height: 176px;
 }
 
 .form_container{
@@ -166,12 +272,14 @@ code {
   outline:none;
   border: 1px solid #A3A3A3;
   border-radius: 8px 0px 0px 8px;
+  font-family: "red rose";
 }
 
 .form_container input::placeholder{
   font-weight: 400;
   font-size: 14px;    
   color: #B8B8B8;
+  font-family: "red rose";
 }
 
 .form_container button{
@@ -181,6 +289,7 @@ code {
   color:white;
   background: var(--btn-color);
   border-radius: 0px 8px 8px 0px;
+  font-family: "red rose";
 }
 
 .ntfTypes{
@@ -217,6 +326,7 @@ code {
   font-weight: 700;
   font-size: 48px;
   text-align:center;
+  font-family: "red rose";
   margin-bottom:43px;
 
 }
@@ -250,6 +360,7 @@ code {
   displaY:flex;
   justify-content: space-between;
   margin-top:10px;
+  font-family: "red rose";
 }
 
 .nft__article.article_2{
@@ -281,6 +392,7 @@ code {
 .metabnbnfts_article h3{
   font-weight: 700;
   font-size: 48px;
+  font-family: "red rose";
 }
 .metabnbnfts_article p {
   margin:35px 0 57.55px 0;
@@ -288,6 +400,7 @@ code {
   font-weight: 400;
   font-size: 18px;
   width:415px;
+  font-family: "red rose";
 
 }
 
@@ -300,6 +413,7 @@ code {
   border-radius: 8px;
   width:156px;
   cursor: pointer;
+  font-family: "red rose";
 }
 
 .nft_name, .nft_mbt, .nft_km, .nft_avail{
@@ -341,6 +455,7 @@ code {
   display:flex;
   flex-direction: column;
   gap:96px;
+  font-family: "red rose";
 }
 
 .footer_container{
@@ -364,6 +479,7 @@ code {
 
 .footer_article{
   color:#fff;
+  font-family: "red rose";
 }
 
 .footer_article h5{
@@ -388,6 +504,7 @@ code {
   margin-top:35px;
   font-weight: 400;
   font-size: 16px;
+  font-family: "red rose";
 }
 
 .collections{
@@ -418,6 +535,7 @@ code {
   border-radius: 8px;
   padding:12px;
   cursor: pointer;
+  font-family: "red rose";
   
 }
 
@@ -429,5 +547,233 @@ code {
 
 .location_filter img {
   width:24px;
+}
+
+
+@media screen and (min-width:280px) and (max-width:540px){
+  
+  .container{
+    width:90%;
+  }
+
+
+
+  #navbar{
+    padding:46.67px 0 60px 0;
+  }
+
+  .header_content article h2{
+    font-size: 40px;
+  }
+
+  .header_content article p{
+    font-size: 16px;
+    margin:28px 0;
+  }
+
+  .logo_img{
+    width: 133px;
+    display: flex;
+    align-items: center;
+  }
+
+  .btn__container button{
+    width: 150px;
+    font-size: 14px;
+  }
+
+  .header_inner_container{
+    flex-direction: column;
+  }
+
+  .navlink_container{
+    display: none;
+  }
+
+  .header_content article h2,
+  .header_content article p,
+  .form_container,
+  .metabnbnfts_article p,
+  .metabnbnfts_img_container,
+  .header_inner_container,
+  .header_img_content
+  {
+    width:unset;
+  }
+
+  .header_img_wrapper img{
+    height: unset;
+  }
+
+  .header_content{
+    padding:0;
+  }
+
+  .metabnbnfts_inner_container{
+    gap:30px;
+  }
+
+  .metabnbnfts_img_container{
+    margin-bottom:60px;
+  }
+
+  .footer_container_main{
+    align-items: center;
+    gap: 50px;
+  }
+  .metabnbnfts_article p{
+    text-align: center;
+  }
+
+  .metabnbnfts_article,
+  .collections
+  {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footerlogo{
+    width: 150px;
+  }
+
+
+  .collection_list{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 18px;
+    text-align: center;
+  }
+
+  .location_filter{
+    margin: 0;
+    margin-top: 50px;
+  }
+
+  .ntfTypes{
+    flex-direction: column;
+    gap:30px;
+  }
+
+  .footer_container_main{
+    flex-direction: column;
+  }
+
+
+  .footer_article,
+  .copyright{
+    text-align: center;
+  }
+
+  .mbtoken,
+  .metamask,
+  .opensea{
+    width:150px;
+  }
+
+  .copyright{
+    margin-top:50px;
+  }
+
+  .logo_container{
+    gap:36px;
+    align-items: center;
+  }
+
+  .nftlist_container, 
+  .placetostaynft_container{
+    grid-template-columns:1fr;
+  }
+
+  .nft_image{
+    width: 100%;
+  }
+
+  .metabnbnfts__container{
+    padding:5px;
+  }
+
+  .metabnbnfts_inner_container{
+    flex-direction: column;
+  }
+
+  .metabnbnfts_article h3{
+    text-align: center;
+  }
+
+
+  
+
+}
+
+@media screen and (min-width: 540px) and (max-width: 820px){
+
+  .header_inner_container{
+    gap:0;
+  }
+
+  .header_img_content {
+    flex-grow:1;
+  }
+
+  .header_imgcontainer_1{
+    align-self: center;
+  }
+
+  .form_container input{
+    padding:13px 15px;
+  }
+
+}
+
+@media screen and (min-width: 820px) and (max-width: 1024px){
+
+  .container{
+    width:90%;
+  }
+  
+  .nftlist_container, 
+  .placetostaynft_container{
+    grid-template-columns: repeat(3, 293px);
+  }
+
+  .header_content article h2{
+    font-size: 36px;
+    width: 446px;
+
+  }
+
+  .header_img_content{
+    width: calc(100% - 576px);
+  }
+
+  .header_content article p{
+    font-size: 19px;
+    width:426px;
+    margin:18px 0;
+  }
+
+
+  .form_container{
+    width:400px;
+  }
+
+  #navbar div ul li a{
+    font-size: 16px;
+  }
+
+  #navbar div ul{
+    gap:18px;
+  }
+
+  .btn__container button{
+    font-size: 14px;
+    width:130px;
+  }
+
+  .logo_img{
+    width:163px;
+  }
+
 }
 
