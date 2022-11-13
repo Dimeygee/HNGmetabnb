@@ -253,6 +253,48 @@ code {
   width:260px;
 }
 
+.metabnbnfts__container{
+  padding:100px;
+  background:var(--btn-color) ;
+}
+
+.metabnbnfts_inner_container{
+  display:flex;
+  gap:122px;
+  justify-content: space-between;
+}
+
+
+.metabnbnfts_article{
+  padding:calc(186px - 100px) 0;
+  color: #fff;
+
+}
+
+.metabnbnfts_article h3{
+  font-weight: 700;
+  font-size: 48px;
+}
+.metabnbnfts_article p {
+  margin:35px 0 57.55px 0;
+  line-height: 35px;
+  font-weight: 400;
+  font-size: 18px;
+  width:415px;
+
+}
+
+.metabnbnfts_article button{
+  outline:none;
+  border:none;
+  color:var(--text-color);
+  background-color:white; 
+  padding:14px 0;
+  border-radius: 8px;
+  width:156px;
+  cursor: pointer;
+}
+
 .nft_name, .nft_mbt, .nft_km, .nft_avail{
   font-weight: 400;
   font-size: 12px;
@@ -276,4 +318,77 @@ code {
 
 .nft_mbt{
   font-weight: 700;
+}
+
+.metabnbnfts_img_container{
+  width:704px;
+  position: relative;
+}
+
+.metabnbnfts_img{
+  width:378.21px;
+  position: absolute;
+}
+
+.metabnbnfts_img.img_three{
+  z-index:4;
+  top:30%;
+}
+
+.metabnbnfts_img.img_two{
+  z-index:9;
+  bottom:0;
+  right:0;
+}
+
+.metabnbnfts_img.img_one{
+  z-index:1;
+  top:0;
+  right:0;
+}
+
+.logo_container{
+  display:flex;
+  flex-direction: column;
+  gap:96px;
+}
+
+.footer_container{
+  background-color: #000000;
+  padding:62px 0 37px 0;
+}
+
+.footer_container_main{
+  display: flex;
+  justify-content: space-between;
+}
+
+.footerlogo{
+  width:233px;
+}
+
+.social_icons{
+  display: flex;
+  gap:32px;
+}
+
+.footer_article{
+  color:#fff;
+}
+
+.footer_article h5{
+  font-weight: 700;
+  font-size: 18px;
+}
+
+.footer_article p{
+  font-weight: 400;
+  font-size: 14px;
+}
+
+.footer_links_container{
+  margin-top:23px;
+  display: flex;
+  flex-direction: column;
+  gap:16px;
 }

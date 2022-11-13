@@ -1,6 +1,7 @@
 import { Outlet, Link } from "react-router-dom"
 import { Container } from "./styles/container"
 import logo from "../images/logo_img.png"
+import { Footer } from "./footer"
 
 
 export const NavBarFooter = () => {
@@ -27,7 +28,7 @@ export const NavBarFooter = () => {
             </Container>
             <Outlet />
             <footer>
-                footer
+                <Footer />
             </footer>
         </>
     )
