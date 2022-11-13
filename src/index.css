@@ -215,9 +215,65 @@ code {
   font-weight: 700;
   font-size: 48px;
   text-align:center;
+  margin-bottom:43px;
 
 }
 
 #NFTS{
   padding:39px 0 53px 0;
+}
+
+.nftlist_container{
+  display: grid;
+  grid-template-columns:repeat(4, 293px);
+  gap:24px;
+}
+
+.nft_container{
+  border: 1px solid #D7D7D7;
+  border-radius: 15px;
+  background: linear-gradient(124.4deg, #FFFFFF 10.8%, #FFFFFF 87.34%);
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding:16px;
+}
+
+.nft__article{
+  displaY:flex;
+  justify-content: space-between;
+  margin-top:10px;
+}
+
+.nft__article.article_2{
+  margin-bottom:9px;
+}
+
+.nft_image{
+  width:260px;
+}
+
+.nft_name, .nft_mbt, .nft_km, .nft_avail{
+  font-weight: 400;
+  font-size: 12px;
+  color:var(--linkblack);
+}
+
+.star_icon{
+  width:12px;
+  height:12px;
+}
+
+.star_icon img{
+  width:100%;
+  display:block;
+}
+
+.star_container{
+  display:flex;
+  gap:8px;
+}
+
+.nft_mbt{
+  font-weight: 700;
 }
