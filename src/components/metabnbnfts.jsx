@@ -2,6 +2,7 @@ import { Container } from "./styles/container"
 import image9 from "../images/image 9.png"
 import image7 from "../images/image 7.png"
 import image8 from "../images/image 8.png"
+import metabnbimages from "../images/metabnb_images.png"
 
 
 export const MetaBnbNFTs = () => {
@@ -17,9 +18,7 @@ export const MetaBnbNFTs = () => {
                         <button>Learn more</button>
                     </article>
                     <div className="metabnbnfts_img_container">
-                        <img src={image9} alt="image9" className="metabnbnfts_img img_one" />
-                        <img src={image8} alt="image8" className="metabnbnfts_img img_two"  />
-                        <img src={image7} alt="image7" className="metabnbnfts_img img_three"  />
+                        <img src={metabnbimages} alt="metabnbimages"  />
                     </div>
                 </div>
             </Container>

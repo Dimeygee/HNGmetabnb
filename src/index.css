@@ -10,7 +10,9 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background: #F5F5F5;
 }
+
 
 :root{
   --linkblack: #434343;
@@ -223,10 +225,15 @@ code {
   padding:39px 0 53px 0;
 }
 
-.nftlist_container{
+.nftlist_container,
+.placetostaynft_container{
   display: grid;
   grid-template-columns:repeat(4, 293px);
   gap:24px;
+}
+
+.placetostaynft_container{
+  margin-bottom: 92px;
 }
 
 .nft_container{
@@ -322,30 +329,13 @@ code {
 
 .metabnbnfts_img_container{
   width:704px;
-  position: relative;
 }
 
-.metabnbnfts_img{
-  width:378.21px;
-  position: absolute;
+.metabnbnfts_img_container img{
+  display: block;
+  width:100%;
 }
 
-.metabnbnfts_img.img_three{
-  z-index:4;
-  top:30%;
-}
-
-.metabnbnfts_img.img_two{
-  z-index:9;
-  bottom:0;
-  right:0;
-}
-
-.metabnbnfts_img.img_one{
-  z-index:1;
-  top:0;
-  right:0;
-}
 
 .logo_container{
   display:flex;
@@ -392,3 +382,52 @@ code {
   flex-direction: column;
   gap:16px;
 }
+
+.copyright{
+  color:#fff;
+  margin-top:35px;
+  font-weight: 400;
+  font-size: 16px;
+}
+
+.collections{
+  display: flex;
+  margin-bottom:75px;
+}
+
+.collection_list{
+  color:var(--linkblack);
+  font-weight: 400;
+  font-size: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap:48px;
+}
+
+.location_filter{
+  width:161px;
+  margin-left:65px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border:none;
+  outline:none;
+  background-color:#fff;
+  border: 1px solid #B4B4B4;
+  border-radius: 8px;
+  padding:12px;
+  cursor: pointer;
+  
+}
+
+.location_filter span{
+  color: #333333;
+  font-weight: 400;
+  font-size: 16px;
+}
+
+.location_filter img {
+  width:24px;
+}
+

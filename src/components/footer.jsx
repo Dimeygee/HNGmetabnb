@@ -27,6 +27,9 @@ export const Footer = () => {
                     <FooterArticle name="Places" link1="Castle" link2='Farms ' link3='Beach' link4='Career' />
                     <FooterArticle name="About us" link1="Road map" link2='Creators  ' link3='Career' link4='Contact us'  />
                 </div>
+                <>
+                    <p className="copyright">&copy; 2022 Metabnb</p>
+                </>
             </Container>
         </div>
     )

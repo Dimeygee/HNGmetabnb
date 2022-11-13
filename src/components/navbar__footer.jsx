@@ -15,10 +15,10 @@ export const NavBarFooter = () => {
                     </Link>
                     <div>
                         <ul>
-                            <li><Link href="/">Home</Link></li>
-                            <li><Link href="/Placetostay">Place to stay</Link></li>
-                            <li><Link href="/NFTs">NFTs</Link></li>
-                            <li><Link href="/Community">Community</Link></li>
+                            <li><Link to="/">Home</Link></li>
+                            <li><Link to="/Placetostay">Place to stay</Link></li>
+                            <li><Link to="/NFTs">NFTs</Link></li>
+                            <li><Link to="/Community">Community</Link></li>
                         </ul>
                     </div>
                     <div className="btn__container"> 
