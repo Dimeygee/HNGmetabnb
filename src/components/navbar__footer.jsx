@@ -26,7 +26,7 @@ export const NavBarFooter = () => {
             </MobileModal>
             <Container>
                 <nav id="navbar">
-                    <Link to="/" className="logo_img" onClick={() => ismobileOpen(!mobile)}>
+                    <Link to="/" className="logo_img">
                         <img src={logo} alt="logo_img" />
                     </Link>
                     <div className="navlink_container">
