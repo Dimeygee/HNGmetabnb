@@ -60,10 +60,12 @@ code {
   font-weight: 400;
   font-size: 20px;
   font-family: "red rose";
+  text-align: center;
 } 
 
 .container{
   width:1204px;
+  max-width: 100%;
   margin:0 auto;
 }
 
@@ -147,8 +149,8 @@ code {
 
 .modalcontent{
   background-color: white;
-  max-width: 600px;
-  width: 90%;
+  width: 600px;
+  max-width: 90%;
   border-radius: 16px;
 }
 
@@ -260,7 +262,7 @@ code {
 
 .form_container{
   display: flex;
-  width: 618.71px;
+  max-width: 618.71px;
   border-radius:8px;
 }
 
@@ -338,7 +340,7 @@ code {
 .nftlist_container,
 .placetostaynft_container{
   display: grid;
-  grid-template-columns:repeat(4, 293px);
+  grid-template-columns:repeat(4, 1fr);
   gap:24px;
 }
 
@@ -367,8 +369,9 @@ code {
   margin-bottom:9px;
 }
 
-.nft_image{
-  width:260px;
+.nft_image {
+  width: 260px;
+  max-width: 100%;
 }
 
 .metabnbnfts__container{
@@ -399,7 +402,7 @@ code {
   line-height: 35px;
   font-weight: 400;
   font-size: 18px;
-  width:415px;
+  max-width:415px;
   font-family: "red rose";
 
 }
@@ -442,7 +445,7 @@ code {
 }
 
 .metabnbnfts_img_container{
-  width:704px;
+  max-width:704px;
 }
 
 .metabnbnfts_img_container img{
@@ -517,9 +520,10 @@ code {
   font-weight: 400;
   font-size: 20px;
   display: flex;
-  justify-content: space-between;
   align-items: center;
   gap:48px;
+  text-align: center;
+  flex-wrap: wrap;
 }
 
 .location_filter{
@@ -550,13 +554,67 @@ code {
 }
 
 
-@media screen and (min-width:280px) and (max-width:540px){
+@media screen and (max-width:280px) {
+
+  .wallet div {
+    flex-direction: column;
+  }
+  .form_container button{
+    width: 230px;
+  }
+}
+  
+
+@media screen and (min-width:280px) and (max-width:767px){
   
   .container{
-    width:90%;
+    max-width:90%;
   }
 
+  .hamburger__container{
+    display: flex;
+    width:30px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap:4px;
+  }
 
+  .mobilemenu__container{
+    background-color: white;
+    width: 90%;
+    position: fixed;
+    top:30px;
+    border-radius: 25px;
+    font-family: sora;
+    font-weight:400 ;
+  }
+
+  .mobile_header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:15px;
+  }
+
+  .mobile_body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 44px;
+    padding: 20px 0;
+  }
+
+  .mobile_body a {
+    text-decoration: none;
+    color:black;
+  }
+
+  .hamburger__container > div{
+    width: 20px;
+    height:3px;
+    background: var(--btn-color);
+  }
 
   #navbar{
     padding:46.67px 0 60px 0;
@@ -580,6 +638,22 @@ code {
   .btn__container button{
     width: 150px;
     font-size: 14px;
+    display: none;
+  }
+
+  .mobile_btn__container button{
+    width:150px;
+    padding:15px 0 13px 0;
+    color:white;
+    display: inline-block;
+    background:var(--btn-color);
+    border:none;
+    outline:none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-weight: 400;
+    font-size: 16px;
+    font-family: "red rose";
   }
 
   .header_inner_container{
@@ -706,14 +780,169 @@ code {
 
 }
 
-@media screen and (min-width: 540px) and (max-width: 820px){
+
+@media screen and (min-width: 767px) and (max-width: 899px){
+
+  .container{
+    max-width: 734px;
+  }
+
+  .navlink_container,
+  .btn__container button{
+    display: none;
+  }
+
+  
+  .mobilemenu__container{
+    background-color: white;
+    width: 90%;
+    position: fixed;
+    top:30px;
+    border-radius: 25px;
+    font-family: sora;
+    font-weight:400 ;
+  }
+
+  .mobile_header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:15px;
+  }
+
+  .mobile_body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 44px;
+    padding: 20px 0;
+  }
+
+  .mobile_body a {
+    text-decoration: none;
+    color:black;
+  }
+
+  
+  .logo_img{
+    width: 203px;
+  }
+
+  .mobile_btn__container button {
+    width: 150px;
+    padding: 15px 0 13px 0;
+    color: white;
+    display: inline-block;
+    background: var(--btn-color);
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-weight: 400;
+    font-size: 16px;
+    font-family: "red rose";
+  }
+
+  .hamburger__container {
+    display: flex;
+    width: 30px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 4px;
+  } 
+  
+  .hamburger__container > div {
+    width: 20px;
+    height: 3px;
+    background: var(--btn-color);
+  }
+
+
+
+  .ntfTypes{
+    padding:10px 20px;
+  }
+
+  .header_inner_container{
+    flex-direction: column;
+  }
+
+  .nft_image{
+    width: 100%;
+  }
+
+  .nftlist_container, .placetostaynft_container{
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .metabnbnfts__container{
+    padding:0;
+  }
+
+  .metabnbnfts_inner_container {
+    gap: 60px;
+}
+
+  .metabnbnfts_img_container{
+    display: flex;
+    align-items: center;
+  }
+
+  .header_img_content{
+    width: 100%;
+  }
+
+  .header_img_content > div{
+    flex-grow: 1;
+  }
+
+  .header_img_wrapper img{
+    height: 276px;
+  }
+
+  .collections{
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .location_filter{
+    margin: 0;
+  }
+
+}
+
+@media screen and (min-width: 900px) and (max-width: 999px){
+
+  .container{
+    max-width: 860px;
+  }
+
+  .header_img_wrapper img{
+    height: unset;
+  }
 
   .header_inner_container{
     gap:0;
   }
 
-  .header_img_content {
-    flex-grow:1;
+  .metabnbnfts_inner_container {
+    gap: 100px;
+}
+
+.header_img_wrapper img{
+  height: unset;
+}
+
+
+  .metabnbnfts_img_container{
+    max-width: 505px;
+    display: flex;
+    align-items: center;
+  }
+
+  .metabnbnfts__container{
+    padding:0;
   }
 
   .header_imgcontainer_1{
@@ -721,59 +950,129 @@ code {
   }
 
   .form_container input{
-    padding:13px 15px;
-  }
-
-}
-
-@media screen and (min-width: 820px) and (max-width: 1024px){
-
-  .container{
-    width:90%;
-  }
-  
-  .nftlist_container, 
-  .placetostaynft_container{
-    grid-template-columns: repeat(3, 293px);
+    padding:16px 15px;
   }
 
   .header_content article h2{
-    font-size: 36px;
-    width: 446px;
-
+    max-width: 646px;
+    width: 100%;
+    font-size: 50px;
   }
 
-  .header_img_content{
-    width: calc(100% - 576px);
+  .header_img_content {
+    max-width: calc(100% - 476px);
+    width: 100%;
   }
 
-  .header_content article p{
-    font-size: 19px;
-    width:426px;
-    margin:18px 0;
-  }
-
-
-  .form_container{
-    width:400px;
-  }
-
-  #navbar div ul li a{
-    font-size: 16px;
+  .ntfTypes{
+    padding: 10px 0;
   }
 
   #navbar div ul{
-    gap:18px;
+    gap: 28px;
   }
 
-  .btn__container button{
-    font-size: 14px;
-    width:130px;
+  #navbar div ul li a{
+    font-size: 18px;
   }
 
   .logo_img{
-    width:163px;
+    width: 203px;
   }
+
+  .header_content article p{
+    max-width: 636px;
+    width: 100%;
+    margin:26px 0;
+    font-size: 24px;
+  }
+
+
+  .nftlist_container, .placetostaynft_container{
+    grid-template-columns: repeat(3,1fr);
+  }
+
+  .nft_image{
+    width: unset;
+  }
+
+  .collections{
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .location_filter{
+    margin: 0;
+  }
+
 
 }
 
+
+@media screen and (min-width:1000px) and (max-width:1254px){
+
+  .container {
+    width: 924px;
+    max-width: 100%;
+    margin: 0 auto;
+  }
+
+  .header_img_content {
+    max-width: calc(100% - 476px);
+    display: flex;
+    gap: 8px;
+    width: 100%;
+  }
+
+  .nftlist_container, .placetostaynft_container {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .header_imgcontainer_1{
+    align-self: center;
+  }
+
+  .header_content article h2 {
+    max-width: 646px;
+    width: 100%;
+  }
+
+  .header_content article p{
+    width: 100%;
+    max-width: 636px;
+    margin: 28px 0; 
+  }
+
+  
+  .location_filter{
+    margin: 0;
+  }
+
+
+  .metabnbnfts_img_container{
+    display: flex;
+    align-items: center;
+  }
+
+  .logo_img{
+    width: 200px;
+  }
+
+  .collections{
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .location_filter{
+    margin: 0;
+  }
+
+  #navbar div ul li a{
+    font-size: 18px;
+  }
+
+  #navbar div ul{
+    gap: 38px;
+  }
+
+}

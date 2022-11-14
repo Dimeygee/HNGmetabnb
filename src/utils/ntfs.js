@@ -150,7 +150,7 @@ export const PLACETOSTAY_NFTS = [
         availability: "available for 2weeks stay"
     },
     {
-        id: 8,
+        id: 9,
         image: frame13, 
         name: "Desert king",
         mbt: "1MBT per night",
@@ -158,7 +158,7 @@ export const PLACETOSTAY_NFTS = [
         availability: "available for 2weeks stay"
     },
     {
-        id: 9,
+        id: 10,
         image: frame14, 
         name: "Desert king",
         mbt: "1MBT per night",
@@ -166,7 +166,7 @@ export const PLACETOSTAY_NFTS = [
         availability: "available for 2weeks stay"
     },
     {
-        id: 10,
+        id: 11,
         image: frame15, 
         name: "Desert king",
         mbt: "1MBT per night",
@@ -174,7 +174,7 @@ export const PLACETOSTAY_NFTS = [
         availability: "available for 2weeks stay"
     },
     {
-        id: 11,
+        id: 12,
         image: frame16, 
         name: "Desert king",
         mbt: "1MBT per night",
@@ -182,7 +182,7 @@ export const PLACETOSTAY_NFTS = [
         availability: "available for 2weeks stay"
     },
     {
-        id: 12,
+        id: 13,
         image: frame12, 
         name: "Desert king",
         mbt: "1MBT per night",
@@ -190,7 +190,7 @@ export const PLACETOSTAY_NFTS = [
         availability: "available for 2weeks stay"
     },
     {
-        id: 13,
+        id: 14,
         image: frame11, 
         name: "Desert king",
         mbt: "1MBT per night",
@@ -198,7 +198,7 @@ export const PLACETOSTAY_NFTS = [
         availability: "available for 2weeks stay"
     },
     {
-        id: 14,
+        id: 15,
         image: frame10, 
         name: "Desert king",
         mbt: "1MBT per night",
@@ -206,7 +206,7 @@ export const PLACETOSTAY_NFTS = [
         availability: "available for 2weeks stay"
     },
     {
-        id: 15,
+        id: 16,
         image: frame9, 
         name: "Desert king",
         mbt: "1MBT per night",

@@ -7,6 +7,7 @@ import arrowright from "../images/arrowright.png"
 
 export const ModalContent = ({isOpen, open}) => {
 
+  
 
     return(
         <div className="modalcontent">
